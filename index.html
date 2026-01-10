@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yannick Zehnder - Links</title>
+    <title>Yannick Zehnder</title>
     
     <!-- OG Meta Tags for Social Sharing -->
-    <meta property="og:title" content="Yannick Zehnder - Links">
+    <meta property="og:title" content="Yannick Zehnder">
     <meta property="og:description" content="Links to my projects, social media, and digital presence.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://links.yannickzehnder.ch">
-    <meta property="og:site_name" content="Yannick's Links">
+    <meta property="og:url" content="https://yannickzehnder.ch">
+    <meta property="og:site_name" content="Yannick's Home Page">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Yannick Zehnder - Links">
+    <meta name="twitter:title" content="Yannick Zehnder">
     <meta name="twitter:description" content="Links to my projects, social media, and digital presence.">
     
     <!-- Google Analytics 4 -->
@@ -44,9 +44,9 @@
             color: #ffffff;
             font-family: 'Courier New', Courier, monospace;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
-            padding: 2vw;
+            padding: 12vw;
         }
         
         .container {
@@ -55,7 +55,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 3vh;
+            gap: 0.5vh;
         }
         
         .header {
@@ -67,7 +67,7 @@
             font-size: clamp(1.5rem, 8vw, 3rem);
             font-weight: normal;
             letter-spacing: 2px;
-            margin-bottom: 2vh;
+            margin-bottom: 3vh;
         }
         
         .header p {
@@ -75,16 +75,21 @@
             color: #cccccc;
             letter-spacing: 1px;
             hyphens: auto;
-            text-align: justify;  
+            text-align: center;  
             max-width: 600px;     
             margin: 0 auto;       
             line-height: 1.6;     
+            margin-bottom: 0.75vh;
+        }
+
+        .header p:last-child {
+            margin-bottom: 0;       
         }
         
         .links-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(clamp(60px, 15vw, 100px), 1fr));
-            gap: clamp(1.5rem, 5vw, 3rem);
+            gap: clamp(0.5rem, 2vw, 1rem);
             width: 100%;
             max-width: 500px;
         }
@@ -138,9 +143,7 @@
     <div class="container">
         <div class="header">
             <h1>F. Yannick Zehnder</h1>
-            <br>
             <p>I am a versatile and adaptable professional specializing in the intersection of Marketing, Communication, Sales, and Commercial Strategy.</p>
-            <br>
             <p>My experience has equipped me with the proven ability to translate complex business objectives into engaging messages that drive both market penetration and internal alignment.</p> 
         </div>
         
@@ -174,17 +177,21 @@
             </a>
             -->
 
-            <!-- Medium -->
+            <!-- Medium 
             <a href="https://medium.com/@yannick.zehnder" class="link-item" title="Medium">
                 <i class="ph ph-medium-logo" weight="bold"></i>
             </a>
+            -->
             
             <!-- Add more links as needed... -->
         </div>
         
+        <!-- 
         <div class="footer">
-            <!-- <p>© <script>document.write(new Date().getFullYear())</script> Yannick Zehnder</p> -->
+            <p>© <script>document.write(new Date().getFullYear())</script> Yannick Zehnder</p> 
         </div>
+        -->
+        
     </div>
 </body>
 </html>
