@@ -4,195 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yannick Zehnder</title>
-    
-    <!-- OG Meta Tags for Social Sharing -->
+    <meta name="description" content="Entrepreneur who builds companies and the commercial engines behind them, from early-stage chaos to structured organizations.">
+
+    <!-- Social sharing preview -->
     <meta property="og:title" content="Yannick Zehnder">
-    <meta property="og:description" content="Links to my projects, social media, and digital presence.">
+    <meta property="og:description" content="Entrepreneur who builds companies and the commercial engines behind them, from early-stage chaos to structured organizations.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://yannickzehnder.ch">
-    <meta property="og:site_name" content="Yannick's Home Page">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Yannick Zehnder">
-    <meta name="twitter:description" content="Links to my projects, social media, and digital presence.">
-    
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
-    </script>
-    
-    <!-- Phosphor Icons CDN -->
+    <meta name="twitter:card" content="summary">
+
+    <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    
+
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
-        html, body {
-            width: 100%;
-            height: 100%;
-        }
-        
+
         body {
             background-color: #000000;
-            color: #ffffff;
-            font-family: 'Courier New', Courier, monospace;
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            padding: 12vw;
-        }
-        
-        .container {
-            max-width: 60vw;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5vh;
-        }
-        
-        .header {
-            text-align: center;
-            margin-bottom: 0.5vh;
-        }
-        
-        .header h1 {
-            font-size: clamp(1.5rem, 8vw, 3rem);
-            font-weight: normal;
-            letter-spacing: 2px;
-            margin-bottom: 3vh;
-        }
-        
-        .header p {
-            font-size: clamp(0.8rem, 2.5vw, 1rem);
             color: #cccccc;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.6;
             letter-spacing: 1px;
-            hyphens: auto;
-            text-align: center;  
-            max-width: 600px;     
-            margin: 0 auto;       
-            line-height: 1.6;     
-            margin-bottom: 0.75vh;
+            /* bottom padding keeps the text clear of the fixed LinkedIn icon */
+            padding: clamp(2rem, 10vw, 6rem) 1.25rem 7rem;
         }
 
-        .header p:last-child {
-            margin-bottom: 0;       
+        main {
+            max-width: 38rem;
+            margin: 0 auto;
         }
-        
-        .links-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(clamp(60px, 15vw, 100px), 1fr));
-            gap: clamp(0.5rem, 2vw, 1rem);
-            width: 100%;
-            max-width: 500px;
-        }
-        
-        .link-item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            aspect-ratio: 1;
-            cursor: pointer;
-            transition: transform 0.3s ease, opacity 0.3s ease;
-            text-decoration: none;
+
+        h1 {
             color: #ffffff;
-            border: 2px solid transparent;
-            border-radius: 8px;
-        }
-        
-        .link-item:hover {
-            transform: scale(1.15);
-            opacity: 0.8;
-        }
-        
-        .link-item:active {
-            transform: scale(0.95);
-        }
-        
-        .link-item i {
-            font-size: clamp(2rem, 8vw, 3.5rem);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .footer {
+            font-size: clamp(1.5rem, 7vw, 3rem);
+            font-weight: normal;
+            letter-spacing: 2px;
             text-align: center;
-            margin-top: 3vh;
-            font-size: clamp(0.7rem, 1.8vw, 0.85rem);
-            color: #666666;
-            letter-spacing: 0.5px;
+            margin-bottom: 2rem;
         }
-        
-        /* Responsive breakpoints */
-        @media (max-width: 768px) {
-            .links-grid {
-                grid-template-columns: repeat(auto-fit, minmax(clamp(50px, 20vw, 80px), 1fr));
-            }
+
+        p {
+            font-size: clamp(0.85rem, 2.5vw, 1rem);
+            text-align: justify;
+            hyphens: auto;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 1rem;
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        footer a {
+            color: #ffffff;
+            font-size: 2.75rem;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        footer a:hover {
+            opacity: 0.7;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>F. Yannick Zehnder</h1>
-            <p><b>I'm an entrepreneur who builds companies and the commercial engines behind them, from early-stage chaos to structured organizations.</b></p>
-            <p>My strength is making complex things sell. I take products that are hard to explain, whether technical, financial, or risk-heavy, and turn them into clear positioning, a go-to-market plan, and an investor story that holds up. Then I build what it takes to deliver: the team, the partner network, and the operating rhythm that keeps marketing, sales, and product pulling in the same direction.
-            I've done this as a founder-CEO, as a CCO, and from the investor side. I work hands-on, I'm candid about risks, and I keep founders focused on the few priorities that matter.</p>
-        </div>
-        
-        <div class="links-grid">
-            <!-- Portfolio/Website 
-            <a href="https://yannickzehnder.ch" class="link-item" title="Website">
-                <i class="ph ph-globe" weight="bold"></i>
-            </a>
-            -->
-            
-            <!-- GitHub 
-            <a href="https://github.com/XXXXXXXXXXXXX" class="link-item" title="GitHub">
-                <i class="ph ph-github-logo" weight="bold"></i>
-            </a>
-            -->
-            
-            <!-- LinkedIn -->
-            <a href="https://linkedin.com/in/yannickzehnder" class="link-item" title="LinkedIn">
-                <i class="ph ph-linkedin-logo" weight="bold"></i>
-            </a>
-            
-            <!-- Email 
-            <a href="mailto:hello@yannickzehnder.ch" class="link-item" title="Email">
-                <i class="ph ph-envelope" weight="bold"></i>
-            </a>
-            -->
-            
-            <!-- Twitter/X 
-            <a href="https://twitter.com/yannickzehnder" class="link-item" title="Twitter">
-                <i class="ph ph-x-logo" weight="bold"></i>
-            </a>
-            -->
+    <main>
+        <h1>F. Yannick Zehnder</h1>
+        <p><b>I'm an entrepreneur who builds companies and the commercial engines behind them, from early-stage chaos to structured organizations.</b></p>
+        <p>My strength is making complex things sell. I take products that are hard to explain, whether technical, financial, or risk-heavy, and turn them into clear positioning, a go-to-market plan, and an investor story that holds up. Then I build what it takes to deliver: the team, the partner network, and the operating rhythm that keeps marketing, sales, and product pulling in the same direction.</p>
+        <p>I've done this as a founder-CEO, as a CCO, and from the investor side. I work hands-on, I'm candid about risks, and I keep founders focused on the few priorities that matter.</p>
+    </main>
 
-            <!-- Medium 
-            <a href="https://medium.com/@yannick.zehnder" class="link-item" title="Medium">
-                <i class="ph ph-medium-logo" weight="bold"></i>
-            </a>
-            -->
-            
-            <!-- Add more links as needed... -->
-        </div>
-        
-        <!-- 
-        <div class="footer">
-            <p>© <script>document.write(new Date().getFullYear())</script> Yannick Zehnder</p> 
-        </div>
+    <footer>
+        <!-- Portfolio/Website
+        <a href="https://yannickzehnder.ch" title="Website" aria-label="Website">
+            <i class="ph-bold ph-globe"></i>
+        </a>
         -->
-        
-    </div>
+
+        <!-- GitHub
+        <a href="https://github.com/XXXXXXXXXXXXX" title="GitHub" aria-label="GitHub">
+            <i class="ph-bold ph-github-logo"></i>
+        </a>
+        -->
+
+        <!-- LinkedIn -->
+        <a href="https://linkedin.com/in/yannickzehnder" title="LinkedIn" aria-label="LinkedIn">
+            <i class="ph-bold ph-linkedin-logo"></i>
+        </a>
+
+        <!-- Email
+        <a href="mailto:hello@yannickzehnder.ch" title="Email" aria-label="Email">
+            <i class="ph-bold ph-envelope"></i>
+        </a>
+        -->
+
+        <!-- Twitter/X
+        <a href="https://twitter.com/yannickzehnder" title="Twitter" aria-label="Twitter">
+            <i class="ph-bold ph-x-logo"></i>
+        </a>
+        -->
+
+        <!-- Medium
+        <a href="https://medium.com/@yannick.zehnder" title="Medium" aria-label="Medium">
+            <i class="ph-bold ph-medium-logo"></i>
+        </a>
+        -->
+
+        <!-- Add more links as needed... -->
+    </footer>
 </body>
 </html>
